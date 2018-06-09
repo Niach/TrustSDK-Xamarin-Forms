@@ -6,5 +6,8 @@ namespace Plugin.TrustSDK
 {
     public interface ITrustSDK
     {
+        void SignMessage(Message message);
+        void SignTransaction();
     }
+   
 }

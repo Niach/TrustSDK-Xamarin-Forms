@@ -69,10 +69,26 @@
   <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
     <Compile Include="**\*.android.cs" />
     <PackageReference Include="TrustSDK-Xamarin-Android" Version="0.0.1" />
+    
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <Compile Include="**\*.apple.cs" />
+    <PackageReference Include="TrustSDK.Xamarin.iOS" Version="0.0.1" />
+    <PackageReference Include="Xamarin.Swift4" Version="4.0.0" />
+    <PackageReference Include="Xamarin.Swift4.Core" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.UIKit" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.Foundation" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.Dispatch" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.CoreGraphics" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.CoreImage" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.Darwin" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.CoreFoundation" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.ObjectiveC" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.QuartzCore" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.Metal" Version="4.1.2" />
+    <PackageReference Include="Xamarin.Swift4.OS" Version="4.1.2" />
+
   </ItemGroup>
 
   <ItemGroup>

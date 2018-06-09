@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using NativeTrust = TrustSDK.TrustSDK;
 
 namespace Plugin.TrustSDK
 {
@@ -13,6 +14,8 @@ namespace Plugin.TrustSDK
         public void SignMessage(Message message)
         {
             Debug.WriteLine("sign message ios");
+
+            //var trust = new NativeTrust("trustexample");
         }
 
         public void SignTransaction()
